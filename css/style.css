@@ -1,0 +1,435 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+
+/* Main Styles */
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+} 
+
+h1, h2, h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0px;
+}
+
+/* Reused Styles */
+#container {
+  max-width: 1100px;
+  margin: 0px auto;
+  padding: 0px 20px;
+  overflow: auto;
+}
+
+.highlighted {
+  color: #89A61F;
+}
+
+.btn-light {
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: #f4f4f4;
+  font-size: 1.2rem;
+}
+
+.btn-dark {
+  display: block;
+  padding: 20px 20px;
+}
+
+.bgn-light {
+  background-color: #f4f4f4;
+}
+.bgn-dark {
+  background-color: #89A61F;
+}
+
+.clr {
+  clear: both;
+}
+
+/* Navbar */
+#navbar {
+  background-color: #51608C;
+  color: #fff;
+  overflow: auto;
+}
+
+#navbar a {
+  color: #fff;
+}
+
+#navbar #logo {
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar #main-nav {
+  float: right;
+  list-style-type: none;
+}
+
+#navbar #main-nav li {
+  float: left;
+}
+
+#navbar #main-nav li a {
+  display: block;
+  padding: 20px 20px;
+}
+
+#navbar #main-nav li a:hover {
+  background-color: #BFCDD9;
+  color: #333;
+}
+
+#navbar #main-nav li a.present {
+  background-color: #BFCDD9;
+  color: #333;
+}
+
+
+/* Introduction */
+#intro {
+  height: 600px;
+  text-align: center;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url('../img/hero_pic.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 20px;
+}
+
+#intro h1 {
+  font-size: 60px;
+  padding-top: 150px; 
+  color: #fff;
+}
+
+#intro p {
+  padding: 20px 20px;
+  line-height: 1.2rem;
+  color: #fff;
+}
+
+/* Information */
+#information {
+  height: 500px;
+  color: #fff;
+}
+
+/*#information img {
+  display: block;
+  float: left;
+  width: 50%;
+  height: auto;
+} */
+
+#information #info-img {
+  width: 50%;
+  min-height: 100%;
+  float: left;
+  background-image: url('../img/hotel_gym_1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #51608C;
+} 
+
+#information #info-feat {
+  width: 50%;
+  float: right;
+  height: 100%;
+  text-align: center;
+  padding: 20px 20px;
+  background-color:  #51608C;
+}
+
+#information #info-feat h2 {
+  padding-top: 60px;
+  font-size: 30px;
+}
+
+#information #info-feat p {
+  line-height: 1.5rem;
+  padding-bottom: 20px;
+}
+
+/* Features */
+
+#features .box {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+  padding: 50px 50px;
+  color: #333;
+}
+
+#footer {
+  background-color: #8697A6;
+  color: #fff;
+  text-align: center;
+  padding: 20px 20px;
+  overflow: auto;
+}
+
+
+/* RESPONSIVE STYLES  */
+/* small laptops*/
+@media screen and (max-width: 1024) {
+
+}
+/* Tablets */
+@media screen and (max-width: 768px) and (min-width: 426px) {
+
+  /* Navbar */
+
+  #navbar #logo {
+    float: none;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  #navbar #main-nav {
+    float: none;
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  #navbar #main-nav li {
+    float: none;
+  }
+
+  /* Introduction */
+  #intro h1 {
+    font-size: 40px;
+    padding-top: 150px; 
+    color: #fff;
+  }
+  
+  #intro p {
+    padding: 10px 20px;
+    line-height: 1.2rem;
+    color: #fff;
+  }
+
+  /* Information */
+   #information {
+    height: 400px;
+  } 
+
+  #information #info-img {
+    display: none;
+  }
+
+  #information #info-feat {
+    width: 100%;
+    float: none;
+    height: 100%;
+  }
+
+  /* Features */
+  #features .box {
+    float: none;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 425px) and (min-width: 376px) {
+  /* Navbar */
+
+  #navbar #logo {
+    float: none;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  #navbar #main-nav {
+    float: none;
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  #navbar #main-nav li {
+    float: none;
+  }
+
+  /* Introduction */
+  #intro h1 {
+    font-size: 40px;
+    padding-top: 150px; 
+    color: #fff;
+  }
+  
+  #intro p {
+    padding: 10px 20px;
+    line-height: 1.2rem;
+    color: #fff;
+  }
+
+  /* Information */
+   #information {
+    height: 400px;
+  } 
+
+  #information #info-img {
+    display: none;
+  }
+
+  #information #info-feat {
+    width: 100%;
+    float: none;
+    height: 100%;
+  }
+
+  #information #info-feat h2 {
+    padding-top: 20px;
+    font-size: 25px;
+  }
+
+  /* Features */
+  #features .box {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 321px) {
+    /* Navbar */
+
+    #navbar #logo {
+      float: none;
+      padding-top: 20px;
+      text-align: center;
+    }
+  
+    #navbar #main-nav {
+      float: none;
+      list-style-type: none;
+      text-align: center;
+    }
+    
+    #navbar #main-nav li {
+      float: none;
+    }
+  
+    /* Introduction */
+    #intro h1 {
+      font-size: 30px;
+      padding-top: 150px; 
+      color: #fff;
+    }
+    
+    #intro p {
+      padding: 10px 20px;
+      line-height: 1.2rem;
+      color: #fff;
+    }
+  
+    /* Information */
+     #information {
+      height: 400px;
+    } 
+  
+    #information #info-img {
+      display: none;
+    }
+  
+    #information #info-feat {
+      width: 100%;
+      float: none;
+      height: 100%;
+    }
+  
+    #information #info-feat h2 {
+      padding-top: 20px;
+      font-size: 20px;
+    }
+  
+    /* Features */
+    #features .box {
+      float: none;
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* Navbar */
+
+    #navbar #logo {
+      float: none;
+      padding-top: 20px;
+      text-align: center;
+    }
+  
+    #navbar #main-nav {
+      float: none;
+      list-style-type: none;
+      text-align: center;
+    }
+    
+    #navbar #main-nav li {
+      float: none;
+    }
+  
+    /* Introduction */
+    #intro h1 {
+      font-size: 30px;
+      padding-top: 150px; 
+      color: #fff;
+    }
+    
+    #intro p {
+      padding: 10px 20px;
+      line-height: 1.2rem;
+      color: #fff;
+    }
+  
+    /* Information */
+     #information {
+      height: 400px;
+    } 
+  
+    #information #info-img {
+      display: none;
+    }
+  
+    #information #info-feat {
+      width: 100%;
+      float: none;
+      height: 100%;
+    }
+  
+    #information #info-feat h2 {
+      padding-top: 10px;
+      padding-bottom: 0px;
+      font-size: 20px;
+    }
+
+    #information #info-feat p {
+      font-size: 0.9rem;
+    }
+  
+    /* Features */
+    #features .box {
+      float: none;
+      width: 100%;
+    }
+}
+
+
+
+
+
